@@ -1,0 +1,43 @@
+.calendar {
+    width: 90%;
+    margin: 0 auto;
+}
+.calendar__table {
+    width: 100%;
+}
+.calendar__day{
+    height: 2rem;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+.calendar__day_actual {
+    background: #ffc;
+}
+.calendar__day_disabled {
+    background: #eaeaea;
+    border-color: #aaa;
+    color: #aeaeae;
+}
+.calendar__day_today {
+    border-color: red;
+    background: orange;
+}
+.calendar__day_weak {
+    background: #ccf;
+}
+
+.calendar__btn {
+    background: orange;
+    border-radius: 0.5rem;
+    padding: 0.25rem 1rem;
+    border: 1px solid darkgoldenrod;
+    outline: none;
+    cursor: pointer;
+}
+
+.calendar__controls {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}

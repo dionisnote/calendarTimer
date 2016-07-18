@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 14px;
+        }
+        .timer {
+            color: #666;
+            width: 90%;
+            margin: 5% auto;
+            overflow: hidden;
+        }
+        .timer div { 
+            text-align: center;
+        }
+        .timer > div {
+            width: 16.5%;
+            float: left;
+            position: relative;
+        }
+        .timer > div:before {
+            content: '';
+            display: block;
+            padding-top: 100%;
+        }
+        .val {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding-top: 37%;
+            font-size: 250%;
+        }
+        .timer > div:nth-child(1n) {
+            background: #fcc;
+        }
+        .timer > div:nth-child(2n) {
+            background: #cfc;
+        }
+        .timer > div:nth-child(3n +1) {
+            background-color: #ccf;
+        }
+        @media ( max-width: 1024px ) {
+            body{
+                font-size: 9px;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div class="timer">
+        <h1>До чемпионата осталось:</h1>
+        <div>
+            <div class="val" id="timerYears"></div>
+        </div>
+        <div>
+            <div class="val" id="timerMonths"></div>
+        </div>
+        <div>
+            <div class="val" id="timerDays"></div>
+        </div>
+        <div>
+            <div class="val" id="timerHours"></div>
+        </div>
+        <div>
+            <div class="val" id="timerMin"></div>
+        </div>
+        <div>
+            <div class="val" id="timerSec"></div>
+        </div>
+    </div>
+    <script src="js/timer.js"></script>
+</body>
+</html>

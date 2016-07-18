@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/calendar.css">
+</head>
+<body>
+    
+    <div class="calendar">
+        <table id="calendar" class="calendar__table">
+            <caption>Январь 2016</caption>
+            <tbody>
+                <tr>
+                    <td class="calendar__day calendar__day_disabled">1-tbody</td>
+                    <td class="calendar__day calendar__day_actual">2-tbody</td>
+                    <td class="calendar__day calendar__day_actual">3-tbody</td>
+                    <td class="calendar__day calendar__day_actual">4-tbody</td>
+                    <td class="calendar__day calendar__day_actual">5-tbody</td>
+                    <td class="calendar__day calendar__day_actual">6-tbody</td>
+                    <td class="calendar__day calendar__day_actual">7-tbody</td>
+                </tr>
+            </tbody>
+            <thead>
+                <tr>
+                    <td class="calendar__day calendar__day_weak">Пн</td>
+                    <td class="calendar__day calendar__day_weak">Вт</td>
+                    <td class="calendar__day calendar__day_weak">Ср</td>
+                    <td class="calendar__day calendar__day_weak">Чт</td>
+                    <td class="calendar__day calendar__day_weak">Пт</td>
+                    <td class="calendar__day calendar__day_weak">Сб</td>
+                    <td class="calendar__day calendar__day_weak">Вс</td>
+                </tr>
+
+            </thead>
+        </table>
+
+        <div class="calendar__controls">
+            <div class="calendar__control">
+                <label for="year-set">Год:</label>
+                <input type="text" id="year-set" class="calendar__year-set" value="2016">
+            </div>
+            <div class="calendar__control">
+                <label for="year-set">Месяц:</label>
+                <select name="month" id="month-set">
+                    <option value="0">Январь</option>
+                    <option value="1">Февраль</option>
+                    <option value="2">Март</option>
+                    <option value="3">Апрель</option>
+                    <option value="4">Май</option>
+                    <option value="5">Июнь</option>
+                    <option value="6">Июль</option>
+                    <option value="7">Август</option>
+                    <option value="8">Сентябрь</option>
+                    <option value="9">Октябрь</option>
+                    <option value="10">Ноябрь</option>
+                    <option value="11">Декабрь</option>
+                </select>
+            </div>
+            <div class="calendar__control">
+                <button id="calendar-set" class="calendar__btn">Ок</button>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="js/calendar/calendar.js"></script>
+    <script src="js/calendar/index.js"></script>
+</body>
+</html>
